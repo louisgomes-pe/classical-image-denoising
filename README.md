@@ -42,9 +42,8 @@ variation in the noise draw.
 
 | Method | MSE | PSNR (dB) |
 |---|---|---|
-| BM3D (all stages) | 21.83 | 34.74
- |
-| BM3D (hard-thresholding) | 24.77	 | 34.19 |
+| BM3D (all stages) | 21.83 | 34.74 |
+| BM3D (hard-thresholding) | 24.77 | 34.19 |
 | Non-Local Means | 30.16 | 33.34 |
 | Wavelet thresholding (sym6, soft) | 69.81 | 29.69 |
 | Bilateral filter | 39.04 | 32.21 |

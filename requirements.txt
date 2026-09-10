@@ -5,3 +5,4 @@ numpy==2.4.6
 opencv-python==5.0.0.93
 PyWavelets==1.9.0
 scipy==1.17.1
+pandas==3.0.5

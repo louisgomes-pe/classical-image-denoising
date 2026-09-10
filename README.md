@@ -4,7 +4,7 @@ Comparative analysis of five classical image denoising methods, evaluated
 quantitatively on a grayscale image corrupted by additive Gaussian noise at a
 controlled SNR.
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/louisgomes-pe/classical-image-denoising/blob/main/notebooks/denoising_methods.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/louisgomes-pe/classical-image-denoising/blob/main/notebooks/classical-image-denoising.ipynb)
 
 ---
 

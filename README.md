@@ -4,7 +4,7 @@ Comparative analysis of five classical image denoising methods, evaluated
 quantitatively on a grayscale image corrupted by additive Gaussian noise at a
 controlled SNR.
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/USERNAME/classical-image-denoising/blob/main/notebooks/denoising_methods.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/louisgomes-pe/classical-image-denoising/blob/main/notebooks/denoising_methods.ipynb)
 
 ---
 
@@ -31,14 +31,8 @@ inspection alone.
 | Wavelet thresholding | Sparsity in a fixed transform basis | Wavelet (Haar from scratch + PyWavelets) |
 | BM3D | Non-local self-similarity + transform sparsity | 3D patch groups |
 
-The progression is deliberate: from purely local averaging, to edge-aware local
-filtering, to non-local patch averaging, to transform-domain sparsity, and
-finally to BM3D which combines the last two.
-
 The Haar wavelet transform is implemented from scratch (forward and inverse,
-multi-level dyadic decomposition) before switching to PyWavelets, to make
-explicit what the transform actually computes rather than treating it as a
-black box.
+multi-level dyadic decomposition) before switching to PyWavelets, which provides more advanced wavelets. 
 
 ## Results
 
@@ -48,12 +42,13 @@ variation in the noise draw.
 
 | Method | MSE | PSNR (dB) |
 |---|---|---|
-| BM3D (all stages) | TODO | TODO |
-| BM3D (hard-thresholding) | TODO | TODO |
-| Non-Local Means | TODO | TODO |
-| Wavelet thresholding (sym6, soft) | TODO | TODO |
-| Bilateral filter | TODO | TODO |
-| Gaussian filter | TODO | TODO |
+| BM3D (all stages) | 21.83 | 34.74
+ |
+| BM3D (hard-thresholding) | 24.77	 | 34.19 |
+| Non-Local Means | 30.16 | 33.34 |
+| Wavelet thresholding (sym6, soft) | 69.81 | 29.69 |
+| Bilateral filter | 39.04 | 32.21 |
+| Gaussian filter | 48.71 | 31.25 |
 
 ![Comparison of denoising methods](assets/comparison_grid.png)
 
